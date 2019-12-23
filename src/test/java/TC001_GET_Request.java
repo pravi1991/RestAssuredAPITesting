@@ -1,3 +1,7 @@
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -29,12 +33,12 @@ public class TC001_GET_Request {
   //status code validation
   int statusCode=response.getStatusCode();
   System.out.println("Status code is: "+statusCode);
-  Assert.assertEquals(statusCode, 200);
+  AssertJUnit.assertEquals(statusCode, 200);
   
   //status line verification
   String statusLine=response.getStatusLine();
   System.out.println("Status line is:"+statusLine);
-  Assert.assertEquals(statusLine, "HTTP/1.1 200 OK");
+  AssertJUnit.assertEquals(statusLine, "HTTP/1.1 200 OK");
   
  }
   
