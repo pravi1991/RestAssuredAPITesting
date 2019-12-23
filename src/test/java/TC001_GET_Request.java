@@ -23,7 +23,7 @@ public class TC001_GET_Request {
   RequestSpecification httpRequest=RestAssured.given();
   
   //Response object
-  Response response=httpRequest.request(Method.GET,"/Hyderabad");
+  Response response=httpRequest.request(Method.GET,"/Kannur");
   
   //print response in console window
   
