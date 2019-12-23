@@ -17,7 +17,7 @@ public class TC001_GET_Request {
  void getweatherDetails()
  {
   //Specify base URI
-  RestAssured.baseURI="google.com";
+  RestAssured.baseURI="https://google.com";
   
   //Request object
   RequestSpecification httpRequest=RestAssured.given();
